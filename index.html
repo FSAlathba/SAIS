@@ -47,8 +47,13 @@
         <p>For more Information</p>
         
     <!-- Embed Chatbot -->
-        <div id="chatbot-container"></div>
-        <script src="https://app.gpt-trainer.com/widget/c97eb19d44db4c52b357f8ab0a655f2b"></script>
-    </section>
-</body>
-</html>
+    <div id="chatbot-container"></div>
+    <script>
+        (function() {
+            var script = document.createElement("script");
+            script.src = "https://app.gpt-trainer.com/widget/c97eb19d44db4c52b357f8ab0a655f2b";
+            script.async = true;
+            document.getElementById("chatbot-container").appendChild(script);
+        })();
+    </script>
+    
